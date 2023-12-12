@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memória do heroi</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--Scripts-->
+    <script defer src="scripts/card.js"></script>
+    <script defer src="scripts/bord.js"></script>
+    <script defer src="scripts/main.js"></script>
+</head>
+<body>
+    <!--Templates-->
+    <template id="cardTemplate">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"></div>
+                <div class="flip-card-back">
+                    <img src="images/heros/card01.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </template>
+    <!--Board-->
+    <div id="board" class="hidden"></div>
+    <!--Menu-->
+    <main id="menu">
+        <h1>Memória do herói</h1>
+        <div class="container">
+            <select name="numCards" id="numCards"></select>
+            <button id="start">start</button>
+        </div>
+    </main>    
+</body>
+</html>
